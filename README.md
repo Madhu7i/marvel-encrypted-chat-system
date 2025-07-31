@@ -1,4 +1,4 @@
-# Marvel Encrypted Chat System
+# Marvel Encrypted Chat Room
 
 A secure, multi-client chat application featuring AES encryption with both TCP and UDP protocol implementations. Users can select Marvel characters and communicate across different themed chat rooms with real-time message broadcasting.
 
