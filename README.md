@@ -1,5 +1,4 @@
 # Marvel Encrypted Chat System
-A multi-client chat application with AES encryption supporting both TCP and UDP protocols. Features Marvel character selection, multiple chat rooms, and concurrent user handling.
 
 A secure, multi-client chat application featuring AES encryption with both TCP and UDP protocol implementations. Users can select Marvel characters and communicate across different themed chat rooms with real-time message broadcasting.
 
@@ -101,6 +100,28 @@ serverIP = 'YOUR_SERVER_IP'        # Server IP address
 serverPort = YOUR_PORT             # Port number
 key = b'Your 16-byte key'          # Encryption key (must be 16 bytes)
 ```
+
+## 🌐 Network Requirements
+
+**Current Configuration**: Local Network Only
+- ✅ **Same WiFi/LAN**: All devices must be on the same local network
+- ❌ **Different Networks**: Won't work across different WiFi networks or internet
+- 🏠 **IP Range**: Uses private IP addresses (192.168.x.x range)
+
+### Connection Scenarios
+| Scenario | Status | Notes |
+|----------|--------|-------|
+| Same WiFi network | ✅ Works | Recommended for testing |
+| Same office LAN | ✅ Works | If no firewall blocking |
+| Different WiFi networks | ❌ Blocked | Private IP not routable |
+| Over internet | ❌ Blocked | Needs port forwarding/VPN |
+
+### For Internet Access (Advanced)
+To make this work across different networks, you would need:
+1. **Port Forwarding** on router (ports 11000 & 12000)
+2. **Public IP Address** or Dynamic DNS
+3. **Firewall Configuration**
+4. **Security Considerations** (stronger authentication)
 
 ## 📊 Architecture Overview
 
